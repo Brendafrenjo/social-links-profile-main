@@ -41,6 +41,7 @@
         padding: 0;
         margin: 0;
         margin-bottom: 5px;
+        margin-top: 10px;
       }
 
       h3 {
@@ -67,13 +68,13 @@
       .jessica-profile {
         background-color: #1f1f1f;
         margin-top: 40px;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
         border-radius: 10px;
       }
 
       .jessica-avatar {
-        margin: 20px;
+        margin: 10px;
         border-radius: 50%;
       }
 
@@ -83,6 +84,30 @@
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
+      }
+
+      @media (max-width: 500px) {
+        body {
+          margin: 20px;
+        }
+
+        .jessica-profile {
+          padding: 15px;
+        }
+      }
+
+      @media (max-width: 280px) {
+        h1 {
+          font-size: 28px;
+        }
+
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 15px;
+        }
       }
     </style>
   </head>
@@ -109,9 +134,18 @@
     <footer>
       <div class="attribution mt-2">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-white"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Brenda Frenjo</a>.
+        >. Coded by
+        <a
+          href="https://github.com/Brendafrenjo/social-links-profile-main"
+          class="text-white"
+          target="_blank"
+          >Brenda Frenjo</a
+        >.
       </div>
     </footer>
   </body>
